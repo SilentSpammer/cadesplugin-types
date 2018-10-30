@@ -2,4 +2,4 @@
 
 This packet provides interfaces and enums for working with cadesplugin_api.js.
 
-NOT ready for pruduction yet.
+NOT ready for production yet.
