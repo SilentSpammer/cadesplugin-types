@@ -1,0 +1,15 @@
+export const enum ProgIds {
+    About = 'CAdESCOM.About',
+    CadesSignedData = 'CAdESCOM.CadesSignedData',
+    CPAttribute = 'CAdESCOM.CPAttribute',
+    CPCertificate = 'CAdESCOM.Certificate',
+    CPEnvelopedData = 'CAdESCOM.CPEnvelopedData',
+    CPHashedData = 'CAdESCOM.HashedData',
+    CPSigner = 'CAdESCOM.CPSigner',
+    PrivateKeyUsageValidator = 'PKIValidator.PrivateKeyUsageValidator',
+    RawSignature = 'CAdESCOM.RawSignature',
+    SignedXML = 'CAdESCOM.SignedXML',
+    Store = 'CAdESCOM.Store',
+    SymmetricAlgorithm = 'CAdESCOM.SymmetricAlgorithm',
+    // WebClassFactory = 'CAdESCOM.WebClassFactory',
+}
