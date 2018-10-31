@@ -1,5 +1,5 @@
-import * as Sync from './interfaces.sync/@';
-import * as Variant from './interfaces.variant/@';
+import * as Sync from '../interfaces.sync/@';
+import * as Variant from '../interfaces.variant/@';
 
 // CAPICOM
 export declare function isSync(obj: Variant.IBasicConstraints): obj is Sync.IBasicConstraints;

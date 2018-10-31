@@ -15,6 +15,7 @@
     "interfaces.sync/**",
     "interfaces.async/**",
     "interfaces.variant/**",
+    "guards/**",
     "index.d.ts",
     "index.js"
   ],
