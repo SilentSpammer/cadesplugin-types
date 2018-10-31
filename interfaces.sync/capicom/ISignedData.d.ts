@@ -15,9 +15,18 @@ export interface ISignedData {
     readonly Signers: ISigners;
     Content: string;
 
-    CoSign(Signer?: ISigner, EncodingType?: CAPICOM_ENCODING_TYPE): string;
-    Sign(Signer?: ISigner, bDetached?: boolean, EncodingType?: CAPICOM_ENCODING_TYPE): string;
-    Verify(SignedMessage: string, bDetached?: boolean, VerifyFlag?: CAPICOM_SIGNED_DATA_VERIFY_FLAG): string;
+    CoSign(Signer: ISigner, EncodingType: CAPICOM_ENCODING_TYPE): string;
+    CoSign(Signer: ISigner): string;
+    CoSign(): string;
+
+    Sign(Signer: ISigner, bDetached: boolean, EncodingType: CAPICOM_ENCODING_TYPE): string;
+    Sign(Signer: ISigner, bDetached: boolean): string;
+    Sign(Signer: ISigner): string;
+    Sign(): string;
+
+    Verify(SignedMessage: string, bDetached: boolean, VerifyFlag: CAPICOM_SIGNED_DATA_VERIFY_FLAG): string;
+    Verify(SignedMessage: string, bDetached: boolean): string;
+    Verify(SignedMessage: string): string;
 }
 
 // @TODO: descriptions

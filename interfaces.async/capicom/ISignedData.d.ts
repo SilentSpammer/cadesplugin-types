@@ -16,9 +16,18 @@ export interface ISignedData {
     readonly Content: Promise<string>;
     propset_Content(value: string): Promise<void>;
 
-    CoSign(Signer?: ISigner, EncodingType?: CAPICOM_ENCODING_TYPE): Promise<string>;
-    Sign(Signer?: ISigner, bDetached?: boolean, EncodingType?: CAPICOM_ENCODING_TYPE): Promise<string>;
-    Verify(SignedMessage: string, bDetached?: boolean, VerifyFlag?: CAPICOM_SIGNED_DATA_VERIFY_FLAG): Promise<string>;
+    CoSign(Signer: ISigner, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
+    CoSign(Signer: ISigner): Promise<string>;
+    CoSign(): Promise<string>;
+
+    Sign(Signer: ISigner, bDetached: boolean, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
+    Sign(Signer: ISigner, bDetached: boolean): Promise<string>;
+    Sign(Signer: ISigner): Promise<string>;
+    Sign(): Promise<string>;
+
+    Verify(SignedMessage: string, bDetached: boolean, VerifyFlag: CAPICOM_SIGNED_DATA_VERIFY_FLAG): Promise<string>;
+    Verify(SignedMessage: string, bDetached: boolean): Promise<string>;
+    Verify(SignedMessage: string): Promise<string>;
 }
 
 // @TODO: descriptions
