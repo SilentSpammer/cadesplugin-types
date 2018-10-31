@@ -1,5 +1,5 @@
-import * as Async from './interfaces.async/@';
-import * as Variant from './interfaces.variant/@';
+import * as Async from '../interfaces.async/@';
+import * as Variant from '../interfaces.variant/@';
 
 // CAPICOM
 export declare function isAsync(obj: Variant.IBasicConstraints): obj is Async.IBasicConstraints;
