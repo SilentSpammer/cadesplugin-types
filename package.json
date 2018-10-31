@@ -2,6 +2,7 @@
   "name": "cadesplugin-types",
   "version": "0.0.3",
   "description": "Typescript defenitions for CryptoPro EDS Browser plug-in",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FallenMireq/cadesplugin-types.git"
@@ -10,7 +11,8 @@
     "enums/**",
     "interfaces.sync/**",
     "interfaces/**",
-    "index.d.ts"
+    "index.d.ts",
+    "index.js"
   ],
   "keywords": [
     "cryptopro",
@@ -21,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/FallenMireq/cadesplugin-types/issues"
   },
-  "homepage": "https://github.com/FallenMireq/cadesplugin-types#readme"
+  "homepage": "https://github.com/FallenMireq/cadesplugin-types#readme",
+  "devDependencies": {
+    "typescript": "^3.1.4"
+  }
 }
