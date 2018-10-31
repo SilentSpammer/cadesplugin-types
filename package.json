@@ -3,6 +3,9 @@
   "version": "0.0.4",
   "description": "Typescript defenitions for CryptoPro EDS Browser plug-in",
   "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FallenMireq/cadesplugin-types.git"
@@ -10,7 +13,8 @@
   "files": [
     "enums/**",
     "interfaces.sync/**",
-    "interfaces/**",
+    "interfaces.async/**",
+    "interfaces.variant/**",
     "index.d.ts",
     "index.js"
   ],

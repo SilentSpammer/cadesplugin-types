@@ -26,5 +26,6 @@ export * from './ICPSigner6';
 export * from './IRawSignature';
 export * from './ISignatureStatus';
 export * from './ISignedXML';
+export * from './ISymmetricAlgorithm';
 export * from './IVersion';
 export * from './IWebClassFactory';
