@@ -1,0 +1,54 @@
+import * as Sync from '../interfaces.sync/@';
+import * as Async from '../interfaces.async/@';
+
+// CAPICOM
+export type IBasicConstraints = Sync.IBasicConstraints | Async.IBasicConstraints;
+export type ICertificate = Sync.ICertificate | Async.ICertificate;
+export type ICertificate2 = Sync.ICertificate2 | Async.ICertificate2;
+export type ICertificates = Sync.ICertificates | Async.ICertificates;
+export type ICertificateStatus = Sync.ICertificateStatus | Async.ICertificateStatus;
+export type IEKU = Sync.IEKU | Async.IEKU;
+export type IEKUs = Sync.IEKUs | Async.IEKUs;
+export type IEncodedData = Sync.IEncodedData | Async.IEncodedData;
+export type IEnvelopedData = Sync.IEnvelopedData | Async.IEnvelopedData;
+export type IExtendedKeyUsage = Sync.IExtendedKeyUsage | Async.IExtendedKeyUsage;
+export type IHashedData = Sync.IHashedData | Async.IHashedData;
+export type IKeyUsage = Sync.IKeyUsage | Async.IKeyUsage;
+export type IOID = Sync.IOID | Async.IOID;
+export type IPrivateKey = Sync.IPrivateKey | Async.IPrivateKey;
+export type IPublicKey = Sync.IPublicKey | Async.IPublicKey;
+export type ISignedData = Sync.ISignedData | Async.ISignedData;
+export type ISigner = Sync.ISigner | Async.ISigner;
+export type ISigners = Sync.ISigners | Async.ISigners;
+export type IStore = Sync.IStore | Async.IStore;
+
+// CAdESCOM
+export type IAbout = Sync.IAbout | Async.IAbout;
+export type IAbout3 = Sync.IAbout3 | Async.IAbout3;
+export type IAbout4 = Sync.IAbout4 | Async.IAbout4;
+export type ICPAttribute = Sync.ICPAttribute | Async.ICPAttribute;
+export type ICPAttribute2 = Sync.ICPAttribute2 | Async.ICPAttribute2;
+export type ICPAttributes = Sync.ICPAttributes | Async.ICPAttributes;
+export type ICPBlobs = Sync.ICPBlobs | Async.ICPBlobs;
+export type ICPCertificate = Sync.ICPCertificate | Async.ICPCertificate;
+export type ICPEnvelopedData = Sync.ICPEnvelopedData | Async.ICPEnvelopedData;
+export type ICPEnvelopedData2 = Sync.ICPEnvelopedData2 | Async.ICPEnvelopedData2;
+export type ICPHashedData = Sync.ICPHashedData | Async.ICPHashedData;
+export type ICPPrivateKey = Sync.ICPPrivateKey | Async.ICPPrivateKey;
+export type ICPSignedData = Sync.ICPSignedData | Async.ICPSignedData;
+export type ICPSignedData2 = Sync.ICPSignedData2 | Async.ICPSignedData2;
+export type ICPSignedData3 = Sync.ICPSignedData3 | Async.ICPSignedData3;
+export type ICPSignedData4 = Sync.ICPSignedData4 | Async.ICPSignedData4;
+export type ICPSignedData5 = Sync.ICPSignedData5 | Async.ICPSignedData5;
+export type ICPSigner = Sync.ICPSigner | Async.ICPSigner;
+export type ICPSigner2 = Sync.ICPSigner2 | Async.ICPSigner2;
+export type ICPSigner3 = Sync.ICPSigner3 | Async.ICPSigner3;
+export type ICPSigner4 = Sync.ICPSigner4 | Async.ICPSigner4;
+export type ICPSigner5 = Sync.ICPSigner5 | Async.ICPSigner5;
+export type ICPSigner6 = Sync.ICPSigner6 | Async.ICPSigner6;
+export type IRawSignature = Sync.IRawSignature | Async.IRawSignature;
+export type ISignatureStatus = Sync.ISignatureStatus | Async.ISignatureStatus;
+export type ISignedXML = Sync.ISignedXML | Async.ISignedXML;
+export type ISymmetricAlgorithm = Sync.ISymmetricAlgorithm | Async.ISymmetricAlgorithm;
+export type IVersion = Sync.IVersion | Async.IVersion;
+export type IWebClassFactory = Sync.IWebClassFactory | Async.IWebClassFactory;
