@@ -1,6 +1,6 @@
 {
   "name": "cadesplugin-types",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Typescript defenitions for CryptoPro EDS Browser plug-in",
   "main": "index.js",
   "scripts": {
