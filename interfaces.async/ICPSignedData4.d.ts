@@ -11,11 +11,18 @@ import { IHashedData } from './capicom/IHashedData';
  */
 export interface ICPSignedData4 extends ICPSignedData3 {
     /** Добавляет к сообщению усовершенствованную подпись */
-    CoSignHash(Hash: IHashedData, Signer?: ISigner, CadesType?: CADESCOM_CADES_TYPE, EncodingType?: CAPICOM_ENCODING_TYPE): Promise<string>;
+    CoSignHash(Hash: IHashedData, Signer: ISigner, CadesType: CADESCOM_CADES_TYPE, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
+    CoSignHash(Hash: IHashedData, Signer: ISigner, CadesType: CADESCOM_CADES_TYPE): Promise<string>;
+    CoSignHash(Hash: IHashedData, Signer: ISigner): Promise<string>;
+    CoSignHash(Hash: IHashedData): Promise<string>;
 
     /** Создает усовершенствованную подпись */
-    SignHash(Hash: IHashedData, Signer?: ISigner, CadesType?: CADESCOM_CADES_TYPE, EncodingType?: CAPICOM_ENCODING_TYPE): Promise<string>;
+    SignHash(Hash: IHashedData, Signer: ISigner, CadesType: CADESCOM_CADES_TYPE, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
+    SignHash(Hash: IHashedData, Signer: ISigner, CadesType: CADESCOM_CADES_TYPE): Promise<string>;
+    SignHash(Hash: IHashedData, Signer: ISigner): Promise<string>;
+    SignHash(Hash: IHashedData): Promise<string>;
 
     /** Проверяет усовершенствованную подпись на основе переданного хэш-значения */
-    VerifyHash(Hash: IHashedData, SignedMessage: string, CadesType?: CADESCOM_CADES_TYPE): Promise<void>;
+    VerifyHash(Hash: IHashedData, SignedMessage: string, CadesType: CADESCOM_CADES_TYPE): Promise<void>;
+    VerifyHash(Hash: IHashedData, SignedMessage: string): Promise<void>;
 }

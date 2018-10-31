@@ -8,7 +8,8 @@ import { ICertificate } from './capicom/ICertificate';
  */
 export interface IRawSignature {
     /** Вычисляет значение электронной подписи */
-    SignHash(Hash: IHashedData, Certificate?: ICertificate): Promise<string>;
+    SignHash(Hash: IHashedData, Certificate: ICertificate): Promise<string>;
+    SignHash(Hash: IHashedData): Promise<string>;
 
     /** Проверяет значение электронной подписи на основе переданного хэш-значения */
     VerifyHash(Hash: IHashedData, Certificate: ICertificate, Signature: string): Promise<void>;

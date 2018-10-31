@@ -26,8 +26,10 @@ export interface ISymmetricAlgorithm {
     ExportKey(pVal: ICertificate): string;
 
     /** Генерирует случайный ключ для использования в алгоритме симметричного шифрования */
-    GenerateKey(algorithm?: CADESCOM_ENCRYPTION_ALGORITHM): void;
+    GenerateKey(algorithm: CADESCOM_ENCRYPTION_ALGORITHM): void;
+    GenerateKey(): void;
 
     /** Импортирует ранее экспортированый симметричный ключ */
-    ImportKey(pbData: string, pVal: ICertificate, Password?: string): void;
+    ImportKey(pbData: string, pVal: ICertificate, Password: string): void;
+    ImportKey(pbData: string, pVal: ICertificate): void;
 }

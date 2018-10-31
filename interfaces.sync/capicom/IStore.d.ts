@@ -17,10 +17,16 @@ import { ICertificates } from './ICertificates';
 export interface IStore {
     /** The Open method opens a specified certificate store. By default, the CAPICOM_CURRENT_USER_STORE location and CAPICOM_MY_STORE store are opened as read-only */
     Open(
-        StoreLocation?: CADESCOM_STORE_LOCATION,
-        StoreName?: CAPICOM_STORE_NAMES | string,
-        OpenMode?: CAPICOM_STORE_OPEN_MODE
+        StoreLocation: CADESCOM_STORE_LOCATION,
+        StoreName: CAPICOM_STORE_NAMES | string,
+        OpenMode: CAPICOM_STORE_OPEN_MODE
     ): void;
+    Open(
+        StoreLocation: CADESCOM_STORE_LOCATION,
+        StoreName: CAPICOM_STORE_NAMES | string
+    ): void;
+    Open(StoreLocation: CADESCOM_STORE_LOCATION): void;
+    Open(): void;
 
     /** The Close method closes an open certificate store */
     Close(): void;

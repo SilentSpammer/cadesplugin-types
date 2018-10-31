@@ -28,8 +28,11 @@ export interface ISignedXML {
     readonly Signers: Promise<ISigners>;
 
     /** Создает подпись */
-    Sign(Signer?: ISigner, XPath?: string): Promise<string>;
+    Sign(Signer: ISigner, XPath: string): Promise<string>;
+    Sign(Signer: ISigner): Promise<string>;
+    Sign(): Promise<string>;
 
     /** Проверяет подпись под документом XML */
-    Verify(SignedMessage: string, XPath?: string): Promise<void>;
+    Verify(SignedMessage: string, XPath: string): Promise<void>;
+    Verify(SignedMessage: string): Promise<void>;
 }
