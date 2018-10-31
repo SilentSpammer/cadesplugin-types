@@ -34,8 +34,8 @@ export interface ICertificate2 extends ICertificate {
     Import(EncodedCertificate: string): void;
     IsValid(): ICertificateStatus;
     KeyUsage(): IKeyUsage;
-    Load();
+    Load(): any;
     PublicKey(): IPublicKey;
-    Save();
-    Template();
+    Save(): any;
+    Template(): any;
 }
