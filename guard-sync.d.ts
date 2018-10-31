@@ -1,0 +1,54 @@
+import * as Sync from './interfaces.sync/@';
+import * as Variant from './interfaces.variant/@';
+
+// CAPICOM
+export declare function isSync(obj: Variant.IBasicConstraints): obj is Sync.IBasicConstraints;
+export declare function isSync(obj: Variant.ICertificate): obj is Sync.ICertificate;
+export declare function isSync(obj: Variant.ICertificate2): obj is Sync.ICertificate2;
+export declare function isSync(obj: Variant.ICertificates): obj is Sync.ICertificates;
+export declare function isSync(obj: Variant.ICertificateStatus): obj is Sync.ICertificateStatus;
+export declare function isSync(obj: Variant.IEKU): obj is Sync.IEKU;
+export declare function isSync(obj: Variant.IEKUs): obj is Sync.IEKUs;
+export declare function isSync(obj: Variant.IEncodedData): obj is Sync.IEncodedData;
+export declare function isSync(obj: Variant.IEnvelopedData): obj is Sync.IEnvelopedData;
+export declare function isSync(obj: Variant.IExtendedKeyUsage): obj is Sync.IExtendedKeyUsage;
+export declare function isSync(obj: Variant.IHashedData): obj is Sync.IHashedData;
+export declare function isSync(obj: Variant.IKeyUsage): obj is Sync.IKeyUsage;
+export declare function isSync(obj: Variant.IOID): obj is Sync.IOID;
+export declare function isSync(obj: Variant.IPrivateKey): obj is Sync.IPrivateKey;
+export declare function isSync(obj: Variant.IPublicKey): obj is Sync.IPublicKey;
+export declare function isSync(obj: Variant.ISignedData): obj is Sync.ISignedData;
+export declare function isSync(obj: Variant.ISigner): obj is Sync.ISigner;
+export declare function isSync(obj: Variant.ISigners): obj is Sync.ISigners;
+export declare function isSync(obj: Variant.IStore): obj is Sync.IStore;
+
+// CAdESCOM
+export declare function isSync(obj: Variant.IAbout): obj is Sync.IAbout;
+export declare function isSync(obj: Variant.IAbout3): obj is Sync.IAbout3;
+export declare function isSync(obj: Variant.IAbout4): obj is Sync.IAbout4;
+export declare function isSync(obj: Variant.ICPAttribute): obj is Sync.ICPAttribute;
+export declare function isSync(obj: Variant.ICPAttribute2): obj is Sync.ICPAttribute2;
+export declare function isSync(obj: Variant.ICPAttributes): obj is Sync.ICPAttributes;
+export declare function isSync(obj: Variant.ICPBlobs): obj is Sync.ICPBlobs;
+export declare function isSync(obj: Variant.ICPCertificate): obj is Sync.ICPCertificate;
+export declare function isSync(obj: Variant.ICPEnvelopedData): obj is Sync.ICPEnvelopedData;
+export declare function isSync(obj: Variant.ICPEnvelopedData2): obj is Sync.ICPEnvelopedData2;
+export declare function isSync(obj: Variant.ICPHashedData): obj is Sync.ICPHashedData;
+export declare function isSync(obj: Variant.ICPPrivateKey): obj is Sync.ICPPrivateKey;
+export declare function isSync(obj: Variant.ICPSignedData): obj is Sync.ICPSignedData;
+export declare function isSync(obj: Variant.ICPSignedData2): obj is Sync.ICPSignedData2;
+export declare function isSync(obj: Variant.ICPSignedData3): obj is Sync.ICPSignedData3;
+export declare function isSync(obj: Variant.ICPSignedData4): obj is Sync.ICPSignedData4;
+export declare function isSync(obj: Variant.ICPSignedData5): obj is Sync.ICPSignedData5;
+export declare function isSync(obj: Variant.ICPSigner): obj is Sync.ICPSigner;
+export declare function isSync(obj: Variant.ICPSigner2): obj is Sync.ICPSigner2;
+export declare function isSync(obj: Variant.ICPSigner3): obj is Sync.ICPSigner3;
+export declare function isSync(obj: Variant.ICPSigner4): obj is Sync.ICPSigner4;
+export declare function isSync(obj: Variant.ICPSigner5): obj is Sync.ICPSigner5;
+export declare function isSync(obj: Variant.ICPSigner6): obj is Sync.ICPSigner6;
+export declare function isSync(obj: Variant.IRawSignature): obj is Sync.IRawSignature;
+export declare function isSync(obj: Variant.ISignatureStatus): obj is Sync.ISignatureStatus;
+export declare function isSync(obj: Variant.ISignedXML): obj is Sync.ISignedXML;
+export declare function isSync(obj: Variant.ISymmetricAlgorithm): obj is Sync.ISymmetricAlgorithm;
+export declare function isSync(obj: Variant.IVersion): obj is Sync.IVersion;
+export declare function isSync(obj: Variant.IWebClassFactory): obj is Sync.IWebClassFactory;

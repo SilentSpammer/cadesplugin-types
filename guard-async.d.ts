@@ -1,0 +1,54 @@
+import * as Async from './interfaces.async/@';
+import * as Variant from './interfaces.variant/@';
+
+// CAPICOM
+export declare function isAsync(obj: Variant.IBasicConstraints): obj is Async.IBasicConstraints;
+export declare function isAsync(obj: Variant.ICertificate): obj is Async.ICertificate;
+export declare function isAsync(obj: Variant.ICertificate2): obj is Async.ICertificate2;
+export declare function isAsync(obj: Variant.ICertificates): obj is Async.ICertificates;
+export declare function isAsync(obj: Variant.ICertificateStatus): obj is Async.ICertificateStatus;
+export declare function isAsync(obj: Variant.IEKU): obj is Async.IEKU;
+export declare function isAsync(obj: Variant.IEKUs): obj is Async.IEKUs;
+export declare function isAsync(obj: Variant.IEncodedData): obj is Async.IEncodedData;
+export declare function isAsync(obj: Variant.IEnvelopedData): obj is Async.IEnvelopedData;
+export declare function isAsync(obj: Variant.IExtendedKeyUsage): obj is Async.IExtendedKeyUsage;
+export declare function isAsync(obj: Variant.IHashedData): obj is Async.IHashedData;
+export declare function isAsync(obj: Variant.IKeyUsage): obj is Async.IKeyUsage;
+export declare function isAsync(obj: Variant.IOID): obj is Async.IOID;
+export declare function isAsync(obj: Variant.IPrivateKey): obj is Async.IPrivateKey;
+export declare function isAsync(obj: Variant.IPublicKey): obj is Async.IPublicKey;
+export declare function isAsync(obj: Variant.ISignedData): obj is Async.ISignedData;
+export declare function isAsync(obj: Variant.ISigner): obj is Async.ISigner;
+export declare function isAsync(obj: Variant.ISigners): obj is Async.ISigners;
+export declare function isAsync(obj: Variant.IStore): obj is Async.IStore;
+
+// CAdESCOM
+export declare function isAsync(obj: Variant.IAbout): obj is Async.IAbout;
+export declare function isAsync(obj: Variant.IAbout3): obj is Async.IAbout3;
+export declare function isAsync(obj: Variant.IAbout4): obj is Async.IAbout4;
+export declare function isAsync(obj: Variant.ICPAttribute): obj is Async.ICPAttribute;
+export declare function isAsync(obj: Variant.ICPAttribute2): obj is Async.ICPAttribute2;
+export declare function isAsync(obj: Variant.ICPAttributes): obj is Async.ICPAttributes;
+export declare function isAsync(obj: Variant.ICPBlobs): obj is Async.ICPBlobs;
+export declare function isAsync(obj: Variant.ICPCertificate): obj is Async.ICPCertificate;
+export declare function isAsync(obj: Variant.ICPEnvelopedData): obj is Async.ICPEnvelopedData;
+export declare function isAsync(obj: Variant.ICPEnvelopedData2): obj is Async.ICPEnvelopedData2;
+export declare function isAsync(obj: Variant.ICPHashedData): obj is Async.ICPHashedData;
+export declare function isAsync(obj: Variant.ICPPrivateKey): obj is Async.ICPPrivateKey;
+export declare function isAsync(obj: Variant.ICPSignedData): obj is Async.ICPSignedData;
+export declare function isAsync(obj: Variant.ICPSignedData2): obj is Async.ICPSignedData2;
+export declare function isAsync(obj: Variant.ICPSignedData3): obj is Async.ICPSignedData3;
+export declare function isAsync(obj: Variant.ICPSignedData4): obj is Async.ICPSignedData4;
+export declare function isAsync(obj: Variant.ICPSignedData5): obj is Async.ICPSignedData5;
+export declare function isAsync(obj: Variant.ICPSigner): obj is Async.ICPSigner;
+export declare function isAsync(obj: Variant.ICPSigner2): obj is Async.ICPSigner2;
+export declare function isAsync(obj: Variant.ICPSigner3): obj is Async.ICPSigner3;
+export declare function isAsync(obj: Variant.ICPSigner4): obj is Async.ICPSigner4;
+export declare function isAsync(obj: Variant.ICPSigner5): obj is Async.ICPSigner5;
+export declare function isAsync(obj: Variant.ICPSigner6): obj is Async.ICPSigner6;
+export declare function isAsync(obj: Variant.IRawSignature): obj is Async.IRawSignature;
+export declare function isAsync(obj: Variant.ISignatureStatus): obj is Async.ISignatureStatus;
+export declare function isAsync(obj: Variant.ISignedXML): obj is Async.ISignedXML;
+export declare function isAsync(obj: Variant.ISymmetricAlgorithm): obj is Async.ISymmetricAlgorithm;
+export declare function isAsync(obj: Variant.IVersion): obj is Async.IVersion;
+export declare function isAsync(obj: Variant.IWebClassFactory): obj is Async.IWebClassFactory;
