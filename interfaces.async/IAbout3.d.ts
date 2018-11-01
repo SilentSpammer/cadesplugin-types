@@ -22,7 +22,7 @@ export interface IAbout3 extends IAbout {
      *
      * [CPDN: ]
      */
-    CSPVersion(ProviderName: string, ProviderType: number): Promise<IVersion>;
-    CSPVersion(ProviderName: string): Promise<IVersion>;
     CSPVersion(): Promise<IVersion>;
+    CSPVersion(ProviderName: string): Promise<IVersion>;
+    CSPVersion(ProviderName: string, ProviderType: number): Promise<IVersion>;
 }

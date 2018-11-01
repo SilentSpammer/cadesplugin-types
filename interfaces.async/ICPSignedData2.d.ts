@@ -9,25 +9,25 @@ import { CADESCOM_CADES_TYPE, CAPICOM_ENCODING_TYPE } from '../enums/@';
  */
 export interface ICPSignedData2 extends ICPSignedData {
     /** Добавляет к сообщению параллельную усовершенствованную подпись */
-    CoSignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
-    CoSignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE): Promise<string>;
-    CoSignCades(Signer: ISigner): Promise<string>;
     CoSignCades(): Promise<string>;
+    CoSignCades(Signer: ISigner): Promise<string>;
+    CoSignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE): Promise<string>;
+    CoSignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
 
     /** Позволяет дополнить подпись до усовершенствованной */
-    EnhanceCades(CadesType: CADESCOM_CADES_TYPE, TSAAddress: string, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
-    EnhanceCades(CadesType: CADESCOM_CADES_TYPE, TSAAddress: string): Promise<string>;
-    EnhanceCades(CadesType: CADESCOM_CADES_TYPE): Promise<string>;
     EnhanceCades(): Promise<string>;
+    EnhanceCades(CadesType: CADESCOM_CADES_TYPE): Promise<string>;
+    EnhanceCades(CadesType: CADESCOM_CADES_TYPE, TSAAddress: string): Promise<string>;
+    EnhanceCades(CadesType: CADESCOM_CADES_TYPE, TSAAddress: string, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
 
     /** Добавляет к сообщению усовершенствованную подпись */
-    SignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE, bDetached: boolean, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
-    SignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE, bDetached: boolean): Promise<string>;
-    SignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE): Promise<string>;
-    SignCades(Signer: ISigner): Promise<string>;
     SignCades(): Promise<string>;
+    SignCades(Signer: ISigner): Promise<string>;
+    SignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE): Promise<string>;
+    SignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE, bDetached: boolean): Promise<string>;
+    SignCades(Signer: ISigner, CadesType: CADESCOM_CADES_TYPE, bDetached: boolean, EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
 
     /** Проверяет усовершенствованную подпись */
-    VerifyCades(SignedMessage: string, CadesType: CADESCOM_CADES_TYPE): Promise<boolean>;
     VerifyCades(SignedMessage: string): Promise<boolean>;
+    VerifyCades(SignedMessage: string, CadesType: CADESCOM_CADES_TYPE): Promise<boolean>;
 }

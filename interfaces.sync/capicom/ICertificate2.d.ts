@@ -25,8 +25,8 @@ export interface ICertificate2 extends ICertificate {
 
     BasicConstraints(): IBasicConstraints;
     // Display(): void;
-    Export(EncodingType: CAPICOM_ENCODING_TYPE): string;
     Export(): string;
+    Export(EncodingType: CAPICOM_ENCODING_TYPE): string;
     ExtendedKeyUsage(): IExtendedKeyUsage;
     // ExtendedProperties(): any;
     // Extensions(): any;
