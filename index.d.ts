@@ -8,5 +8,5 @@ export { Sync, Async };
 
 export declare const cadesplugin: Variant.IWebClassFactory;
 export declare const asyncMode: boolean;
-export * from './guards/isSync';
-export * from './guards/isAsync';
+export declare function isSync<S, A = any>(obj: S | A): obj is S;
+export declare function isAsync<A, S = any>(obj: S | A): obj is A;
