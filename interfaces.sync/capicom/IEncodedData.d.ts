@@ -1,8 +1,8 @@
 import { CAPICOM_ENCODING_TYPE } from '../../enums/@';
 
 export interface IEncodedData {
-    Value(EncodingType: CAPICOM_ENCODING_TYPE): string;
     Value(): string;
+    Value(EncodingType: CAPICOM_ENCODING_TYPE): string;
 
     // Decoder(): any;
 

@@ -24,11 +24,11 @@ export interface ISignedXML {
     readonly Signers: ISigners;
 
     /** Создает подпись */
-    Sign(Signer: ISigner, XPath: string): string;
-    Sign(Signer: ISigner): string;
     Sign(): string;
+    Sign(Signer: ISigner): string;
+    Sign(Signer: ISigner, XPath: string): string;
 
     /** Проверяет подпись под документом XML */
-    Verify(SignedMessage: string, XPath: string): void;
     Verify(SignedMessage: string): void;
+    Verify(SignedMessage: string, XPath: string): void;
 }

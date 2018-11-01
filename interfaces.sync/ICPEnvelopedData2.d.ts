@@ -10,5 +10,5 @@ export interface ICPEnvelopedData2 extends ICPEnvelopedData {
     StreamDecrypt(pbData: string, isFinal: boolean): string | null;
 
     /** Шифрует блок данных, используя данный сертификат */
-    StreamDecrypt(pbData: string, isFinal: boolean): string | null;
+    StreamEncrypt(pbData: string, isFinal: boolean): string | null;
 }

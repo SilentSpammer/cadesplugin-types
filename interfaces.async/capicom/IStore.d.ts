@@ -16,17 +16,17 @@ import { ICertificates } from './ICertificates';
  */
 export interface IStore {
     /** The Open method opens a specified certificate store. By default, the CAPICOM_CURRENT_USER_STORE location and CAPICOM_MY_STORE store are opened as read-only */
+    Open(): Promise<void>;
+    Open(StoreLocation: CADESCOM_STORE_LOCATION): Promise<void>;
+    Open(
+        StoreLocation: CADESCOM_STORE_LOCATION,
+        StoreName: CAPICOM_STORE_NAMES | string
+    ): Promise<void>;
     Open(
         StoreLocation: CADESCOM_STORE_LOCATION,
         StoreName: CAPICOM_STORE_NAMES | string,
         OpenMode: CAPICOM_STORE_OPEN_MODE
     ): Promise<void>;
-    Open(
-        StoreLocation: CADESCOM_STORE_LOCATION,
-        StoreName: CAPICOM_STORE_NAMES | string
-    ): Promise<void>;
-    Open(StoreLocation: CADESCOM_STORE_LOCATION): Promise<void>;
-    Open(): Promise<void>;
 
     /** The Close method closes an open certificate store */
     Close(): Promise<void>;

@@ -27,8 +27,8 @@ export interface ICertificate2 extends ICertificate {
 
     BasicConstraints(): Promise<IBasicConstraints>;
     // Display(): void;
-    Export(EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
     Export(): Promise<string>;
+    Export(EncodingType: CAPICOM_ENCODING_TYPE): Promise<string>;
     ExtendedKeyUsage(): Promise<IExtendedKeyUsage>;
     // ExtendedProperties(): any;
     // Extensions(): any;
