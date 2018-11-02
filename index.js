@@ -1,12 +1,14 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+// Object.defineProperty(exports, "__esModule", { value: true });
 exports.cadesplugin = cadesplugin;
+
 exports.asyncMode = cadesplugin && !!cadesplugin.CreateObjectAsync;
-function guardAsync() {
+exports.syncMode = !asyncMode;
+
+
+exports.isSync = function isSync() {
+    return exports.syncMode;
+};
+exports.isAsync = function isAsync() {
     return exports.asyncMode;
-}
-exports.guardAsync = guardAsync;
-function guardSync() {
-    return !exports.asyncMode;
-}
-exports.guardSync = guardSync;
+};
