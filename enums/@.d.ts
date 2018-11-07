@@ -10,6 +10,7 @@ export * from './CAPICOM_CERT_INFO_TYPE';
 export * from './CAPICOM_CHECK_FLAG';
 export * from './CAPICOM_OID';
 export * from './CAPICOM_KEY_USAGE';
+export * from './CAPICOM_HASH_ALGORITHM';
 
 export * from './CADESCOM_STORE_LOCATION';
 export * from './CADESCOM_ATTRIBUTE';
