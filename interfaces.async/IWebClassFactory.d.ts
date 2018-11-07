@@ -5,7 +5,7 @@ import { ICPSignedData5 } from './ICPSignedData5';
 import { ICPAttribute2 } from './ICPAttribute2';
 import { ICertificate2 } from './capicom/ICertificate2';
 import { ICPEnvelopedData2 } from './ICPEnvelopedData2';
-import { IHashedData } from './capicom/IHashedData';
+import { ICPHashedData } from './ICPHashedData';
 import { ICPSigner6 } from './ICPSigner6';
 import { IRawSignature } from './IRawSignature';
 import { ISignedXML } from './ISignedXML';
@@ -24,7 +24,7 @@ export interface IWebClassFactory {
     CreateObjectAsync(strProgID: ProgIds.CPAttribute): Promise<ICPAttribute2>;
     CreateObjectAsync(strProgID: ProgIds.CPCertificate): Promise<ICertificate2>; // ???
     CreateObjectAsync(strProgID: ProgIds.CPEnvelopedData): Promise<ICPEnvelopedData2>;
-    CreateObjectAsync(strProgID: ProgIds.CPHashedData): Promise<IHashedData>; // ???
+    CreateObjectAsync(strProgID: ProgIds.CPHashedData): Promise<ICPHashedData>; // ???
     CreateObjectAsync(strProgID: ProgIds.CPSigner): Promise<ICPSigner6>;
     CreateObjectAsync(strProgID: ProgIds.PrivateKeyUsageValidator): Promise<any>; // ???
     CreateObjectAsync(strProgID: ProgIds.RawSignature): Promise<IRawSignature>;
