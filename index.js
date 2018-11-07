@@ -3,7 +3,7 @@
 exports.cadesplugin = cadesplugin;
 
 exports.asyncMode = cadesplugin && !!cadesplugin.CreateObjectAsync;
-exports.syncMode = !asyncMode;
+exports.syncMode = !exports.asyncMode;
 
 
 exports.isSync = function isSync() {
