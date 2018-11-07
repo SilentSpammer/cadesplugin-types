@@ -9,7 +9,7 @@ import { IHashedData } from './capicom/IHashedData';
  */
 export interface ICPHashedData extends IHashedData {
     /** Способ кодирования данных для хэширования */
-    ContentEncoding: CADESCOM_CONTENT_ENCODING_TYPE;
+    DataEncoding: CADESCOM_CONTENT_ENCODING_TYPE;
 
     /** Позволяет проинициализировать объект готовым хэш-значением */
     SetHashValue(newVal: string): void;

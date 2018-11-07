@@ -9,8 +9,8 @@ import { IHashedData } from './capicom/IHashedData';
  */
 export interface ICPHashedData extends IHashedData {
     /** Способ кодирования данных для хэширования */
-    readonly ContentEncoding: Promise<CADESCOM_CONTENT_ENCODING_TYPE>;
-    propset_ContentEncoding(value: CADESCOM_CONTENT_ENCODING_TYPE): Promise<void>;
+    readonly DataEncoding: Promise<CADESCOM_CONTENT_ENCODING_TYPE>;
+    propset_DataEncoding(value: CADESCOM_CONTENT_ENCODING_TYPE): Promise<void>;
 
     /** Позволяет проинициализировать объект готовым хэш-значением */
     SetHashValue(newVal: string): Promise<void>;
